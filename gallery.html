@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Gallery - SafeFlight Bird Nets</title>
+    <meta name="description" content="View our professional bird net installations across residential, commercial, and agricultural properties. See the quality of our work.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Installation Gallery - SafeFlight Bird Nets">
+    <meta property="og:description" content="View our professional bird net installations across residential, commercial, and agricultural properties. See the quality of our work.">
+    <meta property="og:image" content="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1200">
+    <meta property="og:url" content="https://www.safeflightbirdnets.com/gallery.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.safeflightbirdnets.com/gallery.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-40">
+        <div class="container-custom">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=100" alt="SafeFlight Bird Nets Logo" class="h-10 w-10 rounded-full mr-3">
+                    <span class="text-xl font-bold text-navy">SafeFlight Bird Nets</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-navy transition-colors">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-navy transition-colors">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-navy transition-colors">Services</a>
+                    <a href="gallery.html" class="text-navy font-semibold">Gallery</a>
+                    <a href="blog/index.html" class="text-gray-700 hover:text-navy transition-colors">Blog</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-navy transition-colors">Contact</a>
+                </nav>
+                
+                <a href="contact.html" class="hidden md:inline-flex btn btn-primary">Get Free Quote</a>
+                
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-700 hover:text-navy focus:outline-none focus:ring-2 focus:ring-navy" aria-label="Open mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu closed fixed inset-0 z-50 md:hidden">
+        <div id="mobile-menu-overlay" class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative bg-white h-full w-80 max-w-sm shadow-lg">
+            <div class="flex items-center justify-between p-4 border-b">
+                <span class="text-xl font-bold text-navy">SafeFlight Bird Nets</span>
+                <button id="mobile-menu-close" class="p-2 rounded-md text-gray-700 hover:text-navy focus:outline-none focus:ring-2 focus:ring-navy" aria-label="Close mobile menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="p-4 space-y-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-navy transition-colors">Home</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-navy transition-colors">About</a>
+                <a href="services.html" class="block py-2 text-gray-700 hover:text-navy transition-colors">Services</a>
+                <a href="gallery.html" class="block py-2 text-navy font-semibold">Gallery</a>
+                <a href="blog/index.html" class="block py-2 text-gray-700 hover:text-navy transition-colors">Blog</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-navy transition-colors">Contact</a>
+                <a href="contact.html" class="btn btn-primary w-full mt-4">Get Free Quote</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="section-padding bg-light-gray">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h1 class="text-navy mb-6">Installation Gallery</h1>
+                    <p class="text-xl text-gray-600 max-w-4xl mx-auto">Explore our portfolio of successful bird net installations across residential, commercial, and agricultural properties. See the quality and professionalism that sets SafeFlight apart.</p>
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button class="filter-btn btn btn-primary" data-filter="all">All Projects</button>
+                    <button class="filter-btn btn btn-outline" data-filter="residential">Residential</button>
+                    <button class="filter-btn btn btn-outline" data-filter="commercial">Commercial</button>
+                    <button class="filter-btn btn btn-outline" data-filter="agricultural">Agricultural</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="section-padding">
+            <div class="container-custom">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <!-- Residential Projects -->
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="residential">
+                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Residential balcony bird net installation" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Balcony Protection</h3>
+                            <p class="text-sm text-gray-600">Residential • Downtown Apartment</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="residential">
+                        <img src="https://images.pexels.com/photos/1648377/pexels-photo-1648377.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Garden bird netting installation" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Garden Coverage</h3>
+                            <p class="text-sm text-gray-600">Residential • Suburban Home</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="residential">
+                        <img src="https://images.pexels.com/photos/1257363/pexels-photo-1257363.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pool area bird deterrent" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Pool Area Protection</h3>
+                            <p class="text-sm text-gray-600">Residential • Private Pool</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="residential">
+                        <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Patio bird net system" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Patio Installation</h3>
+                            <p class="text-sm text-gray-600">Residential • Outdoor Dining</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Commercial Projects -->
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="commercial">
+                        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Warehouse bird control system" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Warehouse Protection</h3>
+                            <p class="text-sm text-gray-600">Commercial • Distribution Center</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="commercial">
+                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Shopping center bird nets" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Shopping Center</h3>
+                            <p class="text-sm text-gray-600">Commercial • Retail Complex</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="commercial">
+                        <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Office building bird control" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Office Complex</h3>
+                            <p class="text-sm text-gray-600">Commercial • Corporate Building</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="commercial">
+                        <img src="https://images.pexels.com/photos/1648377/pexels-photo-1648377.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Food processing facility protection" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Food Processing</h3>
+                            <p class="text-sm text-gray-600">Commercial • Manufacturing Plant</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Agricultural Projects -->
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="agricultural">
+                        <img src="https://images.pexels.com/photos/1257363/pexels-photo-1257363.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Crop protection netting" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Crop Protection</h3>
+                            <p class="text-sm text-gray-600">Agricultural • Vegetable Farm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="agricultural">
+                        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Vineyard bird netting" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Vineyard Coverage</h3>
+                            <p class="text-sm text-gray-600">Agricultural • Wine Grapes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="agricultural">
+                        <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Orchard bird protection" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Orchard Protection</h3>
+                            <p class="text-sm text-gray-600">Agricultural • Fruit Trees</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="agricultural">
+                        <img src="https://images.pexels.com/photos/1648377/pexels-photo-1648377.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Greenhouse bird netting" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Greenhouse System</h3>
+                            <p class="text-sm text-gray-600">Agricultural • Controlled Environment</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Projects -->
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="residential">
+                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Roof protection system" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Roof Protection</h3>
+                            <p class="text-sm text-gray-600">Residential • Tile Roof</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="commercial">
+                        <img src="https://images.pexels.com/photos/1257363/pexels-photo-1257363.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Restaurant patio netting" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Restaurant Patio</h3>
+                            <p class="text-sm text-gray-600">Commercial • Outdoor Dining</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="agricultural">
+                        <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Livestock feed protection" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Feed Protection</h3>
+                            <p class="text-sm text-gray-600">Agricultural • Livestock Farm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item card overflow-hidden cursor-pointer hover:shadow-lg transition-shadow" data-category="residential">
+                        <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Deck bird netting" class="gallery-image w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-navy mb-1">Deck Installation</h3>
+                            <p class="text-sm text-gray-600">Residential • Multi-level Deck</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="text-center mt-12">
+                    <button id="load-more" class="btn btn-outline">Load More Projects</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Stats -->
+        <section class="section-padding bg-light-gray">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h2 class="text-navy mb-4">Our Track Record</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Numbers that speak to our experience and commitment to excellence</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-navy mb-2">500+</div>
+                        <p class="text-gray-600">Successful Installations</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-navy mb-2">98%</div>
+                        <p class="text-gray-600">Customer Satisfaction</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-navy mb-2">15+</div>
+                        <p class="text-gray-600">Years Experience</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-navy mb-2">24/7</div>
+                        <p class="text-gray-600">Emergency Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Before & After -->
+        <section class="section-padding">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h2 class="text-navy mb-4">Before & After</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">See the dramatic difference our bird control solutions make</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-navy mb-4">Commercial Warehouse</h3>
+                        <p class="text-gray-600 mb-6">This warehouse was experiencing significant bird problems with droppings contaminating stored goods and creating health hazards. Our comprehensive netting solution eliminated the problem while maintaining full access for operations.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold text-navy mb-2">Before</h4>
+                                <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Warehouse before bird control" class="gallery-image w-full h-40 object-cover rounded-lg cursor-pointer">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-2">After</h4>
+                                <img src="https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Warehouse after bird control" class="gallery-image w-full h-40 object-cover rounded-lg cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card p-8 bg-light-gray">
+                        <h4 class="text-navy font-semibold mb-4">Project Results</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-navy mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">100% elimination of bird intrusion</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-navy mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Reduced cleaning costs by 80%</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-navy mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Improved workplace safety</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-navy mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">No disruption to operations</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="card p-8 bg-light-gray lg:order-2">
+                        <h4 class="text-navy font-semibold mb-4">Project Benefits</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-navy mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Protected valuable fruit harvest</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-navy mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Increased crop yield by 40%</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-navy mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Maintained organic certification</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-5 h-5 text-navy mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-600">Easy seasonal removal</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="lg:order-1">
+                        <h3 class="text-2xl font-semibold text-navy mb-4">Agricultural Orchard</h3>
+                        <p class="text-gray-600 mb-6">This apple orchard was losing significant portions of their harvest to birds. Our seasonal netting system provided complete protection while allowing for easy access during harvest time.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="font-semibold text-navy mb-2">Before</h4>
+                                <img src="https://images.pexels.com/photos/1257363/pexels-photo-1257363.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Orchard before bird control" class="gallery-image w-full h-40 object-cover rounded-lg cursor-pointer">
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-navy mb-2">After</h4>
+                                <img src="https://images.pexels.com/photos/1648377/pexels-photo-1648377.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Orchard after bird control" class="gallery-image w-full h-40 object-cover rounded-lg cursor-pointer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-padding bg-navy text-white">
+            <div class="container-custom text-center">
+                <h2 class="text-white mb-4">Ready to See Results Like These?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Join hundreds of satisfied customers who have protected their properties with our professional bird control solutions.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="contact.html" class="btn btn-secondary">Get Your Free Quote</a>
+                    <a href="services.html" class="btn btn-outline">View Our Services</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container-custom">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=100" alt="SafeFlight Bird Nets Logo" class="h-8 w-8 rounded-full mr-2">
+                        <span class="text-lg font-bold">SafeFlight Bird Nets</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Professional bird control solutions for residential, commercial, and agricultural properties.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors" aria-label="Instagram">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.148-1.197C4.654 15.135 4.29 14.22 4.29 13.183c0-1.037.365-1.952 1.011-2.608.646-.656 1.463-1.112 2.148-1.112 1.297 0 2.448.49 3.148 1.197.647.656 1.011 1.571 1.011 2.608 0 1.037-.364 1.952-1.011 2.608-.7.707-1.851 1.304-3.148 1.304zm7.718-3.805c0 .685-.555 1.240-1.240 1.240s-1.240-.555-1.240-1.240.555-1.240 1.240-1.240 1.240.555 1.240 1.240z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors" aria-label="LinkedIn">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="gallery.html" class="text-gray-300 hover:text-white transition-colors">Gallery</a></li>
+                        <li><a href="blog/index.html" class="text-gray-300 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#residential" class="text-gray-300 hover:text-white transition-colors">Residential</a></li>
+                        <li><a href="services.html#commercial" class="text-gray-300 hover:text-white transition-colors">Commercial</a></li>
+                        <li><a href="services.html#agricultural" class="text-gray-300 hover:text-white transition-colors">Agricultural</a></li>
+                        <li><a href="services.html#custom" class="text-gray-300 hover:text-white transition-colors">Custom Solutions</a></li>
+                        <li><a href="services.html#maintenance" class="text-gray-300 hover:text-white transition-colors">Maintenance</a></li>
+                        <li><a href="services.html#inspection" class="text-gray-300 hover:text-white transition-colors">Inspection</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2">
+                        <p class="text-gray-300">
+                            <span class="block">123 Protection Avenue</span>
+                            <span class="block">Bird City, BC 12345</span>
+                        </p>
+                        <p class="text-gray-300">
+                            <a href="tel:+1-555-BIRD-NET" class="hover:text-white transition-colors">+1 (555) BIRD-NET</a>
+                        </p>
+                        <p class="text-gray-300">
+                            <a href="mailto:info@safeflightbirdnets.com" class="hover:text-white transition-colors">info@safeflightbirdnets.com</a>
+                        </p>
+                        <div class="mt-4">
+                            <p class="text-gray-300 text-sm">
+                                <strong>Business Hours:</strong><br>
+                                Mon-Fri: 8:00 AM - 6:00 PM<br>
+                                Sat: 9:00 AM - 4:00 PM<br>
+                                Sun: Closed
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 SafeFlight Bird Nets. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="src/main.js"></script>
+    <script>
+        // Gallery filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-outline');
+                    });
+                    this.classList.remove('btn-outline');
+                    this.classList.add('btn-primary');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            item.classList.remove('hidden');
+                        } else {
+                            item.style.display = 'none';
+                            item.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+            
+            // Load more functionality (placeholder)
+            const loadMoreBtn = document.getElementById('load-more');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    // In a real implementation, this would load more images
+                    this.textContent = 'All Projects Loaded';
+                    this.disabled = true;
+                    this.classList.add('opacity-50', 'cursor-not-allowed');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
