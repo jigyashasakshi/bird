@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-gray-900 leading-relaxed;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  
+  p {
+    @apply text-base md:text-lg leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-navy text-white hover:bg-blue-800 focus:ring-navy;
+  }
+  
+  .btn-secondary {
+    @apply bg-gold text-navy hover:bg-yellow-500 focus:ring-gold;
+  }
+  
+  .btn-outline {
+    @apply border-navy text-navy hover:bg-navy hover:text-white focus:ring-navy;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-navy focus:border-transparent;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .bg-hero {
+    background-image: linear-gradient(rgba(28, 63, 170, 0.8), rgba(28, 63, 170, 0.8)), url('https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* Lightbox Styles */
+.lightbox {
+  @apply fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4;
+}
+
+.lightbox img {
+  @apply max-w-full max-h-full object-contain;
+}
+
+.lightbox-close {
+  @apply absolute top-4 right-4 text-white text-4xl cursor-pointer hover:text-gray-300;
+}
+
+.lightbox-nav {
+  @apply absolute top-1/2 transform -translate-y-1/2 text-white text-3xl cursor-pointer hover:text-gray-300;
+}
+
+.lightbox-prev {
+  @apply left-4;
+}
+
+.lightbox-next {
+  @apply right-4;
+}
+
+/* Mobile Menu Animation */
+.mobile-menu {
+  @apply transform transition-transform duration-300 ease-in-out;
+}
+
+.mobile-menu.closed {
+  @apply -translate-x-full;
+}
+
+.mobile-menu.open {
+  @apply translate-x-0;
+}
+
+/* Testimonials Slider */
+.testimonial-slider {
+  @apply relative overflow-hidden;
+}
+
+.testimonial-track {
+  @apply flex transition-transform duration-500 ease-in-out;
+}
+
+.testimonial-slide {
+  @apply min-w-full flex-shrink-0;
+}
+
+/* FAQ Accordion */
+.faq-content {
+  @apply max-h-0 overflow-hidden transition-all duration-300 ease-in-out;
+}
+
+.faq-content.open {
+  @apply max-h-96;
+}
+
+/* Blog Search */
+.blog-post {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.blog-post.hidden {
+  @apply opacity-0 scale-95 pointer-events-none;
+}
