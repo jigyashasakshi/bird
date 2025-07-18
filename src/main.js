@@ -37,6 +37,82 @@ class MobileNav {
   }
 }
 
+// Hero Slider
+class HeroSlider {
+  constructor() {
+    this.slider = document.getElementById('hero-slider');
+    this.slides = document.querySelectorAll('.hero-slide');
+    this.prevBtn = document.getElementById('hero-prev');
+    this.nextBtn = document.getElementById('hero-next');
+    this.indicators = document.querySelectorAll('.hero-indicator');
+    
+    this.currentSlide = 0;
+    this.totalSlides = this.slides.length;
+    this.autoPlayInterval = null;
+    
+    if (this.slider && this.totalSlides > 0) {
+      this.init();
+    }
+  }
+  
+  init() {
+    this.prevBtn?.addEventListener('click', () => this.prevSlide());
+    this.nextBtn?.addEventListener('click', () => this.nextSlide());
+    
+    this.indicators.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => this.goToSlide(index));
+    });
+    
+    // Auto-play
+    this.startAutoPlay();
+    
+    // Pause on hover
+    this.slider.addEventListener('mouseenter', () => this.stopAutoPlay());
+    this.slider.addEventListener('mouseleave', () => this.startAutoPlay());
+  }
+  
+  updateSlider() {
+    // Update slides
+    this.slides.forEach((slide, index) => {
+      slide.classList.toggle('active', index === this.currentSlide);
+    });
+    
+    // Update indicators
+    this.indicators.forEach((indicator, index) => {
+      indicator.classList.toggle('active', index === this.currentSlide);
+    });
+  }
+  
+  nextSlide() {
+    this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
+    this.updateSlider();
+  }
+  
+  prevSlide() {
+    this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
+    this.updateSlider();
+  }
+  
+  goToSlide(index) {
+    this.currentSlide = index;
+    this.updateSlider();
+  }
+  
+  startAutoPlay() {
+    this.stopAutoPlay();
+    this.autoPlayInterval = setInterval(() => {
+      this.nextSlide();
+    }, 5000);
+  }
+  
+  stopAutoPlay() {
+    if (this.autoPlayInterval) {
+      clearInterval(this.autoPlayInterval);
+      this.autoPlayInterval = null;
+    }
+  }
+}
+
 // Testimonials Slider
 class TestimonialsSlider {
   constructor() {
@@ -399,6 +475,7 @@ function initSmoothScrolling() {
 // Initialize all components when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
   new MobileNav();
+  new HeroSlider();
   new TestimonialsSlider();
   new FAQAccordion();
   new ImageLightbox();

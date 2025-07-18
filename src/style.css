@@ -117,6 +117,43 @@
   @apply right-4;
 }
 
+/* Hero Slider Styles */
+.hero-slide {
+  @apply opacity-0 transition-opacity duration-1000 ease-in-out;
+}
+
+.hero-slide.active {
+  @apply opacity-100;
+}
+
+.hero-indicator.active {
+  @apply bg-white scale-125;
+}
+
+/* Enhanced Animations */
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.shadow-3xl {
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+}
+
 /* Mobile Menu Animation */
 .mobile-menu {
   @apply transform transition-transform duration-300 ease-in-out;
