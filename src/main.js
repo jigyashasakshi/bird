@@ -67,8 +67,8 @@ class HeroSlider {
     this.startAutoPlay();
     
     // Pause on hover
-    this.slider.addEventListener('mouseenter', () => this.stopAutoPlay());
-    this.slider.addEventListener('mouseleave', () => this.startAutoPlay());
+    this.slider?.addEventListener('mouseenter', () => this.stopAutoPlay());
+    this.slider?.addEventListener('mouseleave', () => this.startAutoPlay());
   }
   
   updateSlider() {
@@ -112,6 +112,7 @@ class HeroSlider {
     }
   }
 }
+
 
 // Testimonials Slider
 class TestimonialsSlider {
